@@ -35,11 +35,13 @@ header, ul{
     font-weight: bold;
     border-width: 2px;
     border-style: solid;
-    border-image:
-    linear-gradient(90deg, #00F0FF, #5773FF,#FF007A) border-box;
+    overflow: hidden;
+    background:linear-gradient( #520066, #520066) padding-box,
+    linear-gradient(#00F0FF, #5773FF,#FF007A) border-box;
     border-color: transparent;
     padding: 6px 22px;
     border-radius: 50.0391px;
+    
 }
 section{
     text-align: center;
@@ -55,6 +57,11 @@ section{
     margin: 20px 0;
     color: white;
     margin-left: 50px;
+    background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }
 .lorem {
     font-size: 20px;
@@ -71,7 +78,12 @@ section{
     border-radius: 50.0391px;
     height: 72px;
     margin-left: 777px;
-    border: 3px solid yellow;
+    border-width: 2px;
+    border-style: solid;
+    overflow: hidden;
+    background:linear-gradient(#0F0B30,#0F0B30) padding-box,
+    linear-gradient(#00F0FF, #5773FF,#FF007A) border-box;
+    border-color: transparent;
 }
 .third-text{
     padding: 16px 17px 0 0;
@@ -85,9 +97,8 @@ section{
 }
 .arrow2 {
     margin-top: 126px;
-    margin-left: 80px;
+    margin-left: -80px;
     width: 85px ;
     height: 33px;
     color: white;
 }
-text-decoration: underline;
